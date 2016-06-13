@@ -1,0 +1,39 @@
+<div  ng-init="userCtrl.viewUser()">
+    <div>
+        <h3 class="row user-head">
+            User Details
+            <a href="#" class="btn btn-secondary pull-right"
+               type="button"><i class="fa fa-chevron-left"></i>&nbsp;<b>Back</b></a>
+        </h3>
+    </div>
+    <div class="container view-user">
+        <section>
+           <div class="space-details">
+               <label>Name</label>
+               <p> {{userCtrl.user.firstName}} {{userCtrl.user.lastName}}</p>
+           </div>
+            <div class="space-details">
+                <label>Email</label>
+                <p> {{userCtrl.user.email}}</p>
+            </div>
+            <div class="space-details">
+                <label>Address</label>
+                <p class="address-details"> {{userCtrl.user.address.street}},</p>
+                <p> {{userCtrl.user.address.city}}, {{userCtrl.user.address.state}}, {{userCtrl.user.address.country}}, {{userCtrl.user.address.zip}}</p>
+            </div>
+            <div class="space-details">
+                <label>Company</label>
+                <p> {{userCtrl.user.company.name}}</p>
+            </div>
+            <div class="space-details">
+                <button ng-click="userCtrl.deleteUser(userCtrl.user.id)" type="submit" class="btn btn-warning">Delete User</button>
+            </div>
+        </section>
+        <aside>
+            <img ng-src="{{userCtrl.user.profilePic}}"
+                 class="img-responsive profile-pic"
+                 alt="{{userCtrl.user.firstName}}{{userCtrl.user.lastName}}" width="324"
+                 height="356">
+        </aside>
+    </div>
+</div>

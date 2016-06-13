@@ -1,0 +1,135 @@
+/* Styles go here */
+body {
+    /*background: #fcfbe3;*/
+    background: #f1f1f1;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+section{
+    float: left;
+    margin-left: 20px;
+}
+
+aside{
+    margin-right: auto;
+    float: right;
+}
+
+.view-user{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 97%;
+}
+
+.user-head{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar, div>section>div>label, .address-details{
+    margin-bottom: 0px;
+}
+.space-details{
+    margin-bottom: 20px;
+}
+
+div > label, div > section > label{
+    color: #ff6600;
+}
+table, nav, .navbar-default, form, .view-user, div>section, div>aside{
+    background: white;
+}
+
+form, .view-user{
+    padding: 20px;
+}
+
+.ng-invalid.ng-dirty, .ng-dirty {
+    border-color: red;
+}
+
+.ng-valid {
+    border-color: green;
+}
+
+.error-msg{
+    color: red;
+}
+
+table, .user-list, .add-user, form{
+    width:100%;
+    position: relative;
+}
+th, .btn-secondary{
+    color: #ff6600;
+}
+.btn-secondary{
+    border: 1px solid #ff6600;
+    background: #f1f1f1;
+}
+
+table > thead > tr > th {
+    border-bottom: 2px solid #ff6600;
+    padding: 7px;
+}
+table > tbody > tr > td {
+    border-bottom: 1px solid #ff6600;
+    padding: 7px;
+}
+
+#egenLogo{
+    max-width:40px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+#userImage{
+    max-width: 40px;
+    height: 40px;
+    border: solid 1px #ff6600;
+}
+
+.profile-pic{
+    border: 3px solid #ff6600;
+}
+
+.fa-bars{
+    margin-top: 7px;
+    float: right;
+    margin-right:10px;
+    color:#ff6600;
+}
+
+#dropdownMenu{
+    font-size: medium;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+#menuList, #menuList2{
+    color: white;
+    border-bottom: solid 1px #fff;
+}
+
+.navbar-custom {
+    background-color: #657382 !important;
+    min-height: 500px;
+}
+
+.dropdown-menu>li{
+    min-width: 500px;
+    min-height: 20px;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    text-decoration: none;
+    background-color: #ff6600;
+}
+
+.dropdown-menu>li>h1 {
+    margin: 20px;
+}

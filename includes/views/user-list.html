@@ -1,0 +1,31 @@
+<div ng-init = "userCtrl.usersList()" class="container user-list">
+    <h3 class="row col-lg-12 user-head">
+        Users
+        <button ng-click="userCtrl.createNewUser()"
+                class="btn btn-secondary btn-sm addButton pull-right" type="button">
+            <i class="fa fa-plus"></i>&nbsp;<b>Add User</b>
+        </button>
+    </h3>
+    <table>
+        <thead>
+        <tr>
+            <th></th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>CITY</th>
+            <th>COMPANY</th>
+        </tr>
+        </thead>
+        <tbody ng-repeat="user in userCtrl.users" ng-click="userCtrl.viewAndDeleteUser(user)">
+        <tr >
+            <td>
+                <img ng-src="{{user.profilePic}}" class="img-responsive img-circle" id="userImage"/>
+            </td>
+            <td>{{user.firstName}} {{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.address.city}}</td>
+            <td>{{user.company.name}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

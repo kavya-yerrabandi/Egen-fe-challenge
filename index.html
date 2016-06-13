@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="userProfile">
+
+<head>
+    <meta charset="utf-8" />
+    <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script data-require="angular.js@1.4.9" data-semver="1.4.9" src="https://code.angularjs.org/1.4.9/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.4.9/angular-messages.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="includes/css/styles.css" />
+    <script src="includes/scripts/app.js"></script>
+    <script src="includes/scripts/controllers/user.controller.js"></script>
+    <script src="includes/scripts/services/user.service.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header pull-left">
+                <img src="https://egen.solutions/images/egen-logo.png" id="egenLogo" />
+            </div>
+            <div class="navbar-header  pull-right">
+                <ul class="nav pull-left">
+                    <li class="dropdown pull-right">
+                        <div data-toggle="dropdown" class="dropdown-toggle">
+                            <i class="fa fa-bars fa-2x custom-menu"></i>
+                        </div>
+                        <ul class="dropdown-menu navbar-custom ">
+                            <li>
+                                <h3 class="disabled" id="dropdownMenu">MENU</h3>
+                            </li>
+                            <li>
+                                <a href="#/user-list" id="menuList">Users</a>
+                            </li>
+                            <li>
+                                <a href="#/add-user" id="menuList2">Add a User</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div ng-view></div>
+
+</body>
+
+</html>
